@@ -1,0 +1,31 @@
+* { /*CSS RESET*/
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.container {
+    border: 1px dotted black;
+    height: 1500px;
+    position: relative;
+}
+
+.element {
+    background-color: gray;
+    padding: 10px;
+}
+
+.main-element {
+    background-color: yellow;
+    padding: 10px;
+    /*position: static; /*Mi elemento NO se mueve para nada*/
+    /*position: relative; /*Me permite usar top, bottom, right y left se va a mover en base a la posición original de mi elemento*/
+    /*top, bottom, left, right*/
+    /*position: absolute; /*Se va a mover BASADO en el elemento padre y va a ignorar los elementos alrededor*/
+    /*position: fixed; /*No se ve afectado por el scroll, ignora a los elementos que tiene alrededor*/
+    position: sticky;
+    top: 10px;
+    left: 20px;
+    z-index: 2; /*Entre más alto sea el número, más cercano en el eje z se va a encontrar*/
+}
